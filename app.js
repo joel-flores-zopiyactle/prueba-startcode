@@ -66,11 +66,11 @@ function calcularUtilidad(listaDePrecios) {
     const utilidad = venta.preciosDeVenta - compra.precioDeCompra;
     
     console.log(`
-        ** Horas disponibles ${listaDePrecios.length} **
-        La hora adecuedo para comprar es en el numero: ${compra.horaDeCompra + 1} por $${compra.precioDeCompra} MXN y 
-        la hora adecuedo para vender es en el numero: ${venta.horaDeVenta + 1} por $${venta.preciosDeVenta} MXN 
-        con una utilidad de $${utilidad} MXN
-    `);
+        ** Horas disponibles: ${listaDePrecios.length} **
+        La hora óptima para comprar es: ${compra.horaDeCompra + 1}, con un precio de $${compra.precioDeCompra} MXN.
+        La hora óptima para vender es: ${venta.horaDeVenta + 1}, con un precio de $${venta.preciosDeVenta} MXN.
+        Utilidad estimada: $${utilidad} MXN.
+    `);    
 }
 
 calcularUtilidad(numbers)
